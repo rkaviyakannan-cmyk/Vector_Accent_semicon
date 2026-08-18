@@ -1,0 +1,53 @@
+seed: 42
+
+image:
+  width: 1000
+  height: 1000
+  channels: 1
+
+model:
+  backbone: mobilenet_v3_small
+  pretrained: false
+  input_size: 128
+  use_cbam: true
+  use_cir: true
+  use_dual_correlation: true
+  use_xy_feedback: true
+
+scale:
+  min: 9.0
+  max: 11.0
+  step: 0.25
+
+rotation:
+  min: -2.0
+  max: 2.0
+  step: 1.0
+
+candidate:
+  top_k: 3
+  nms_radius: 40
+  intensity_weight: 0.5
+  gradient_weight: 0.5
+  ambiguity_margin: 0.03
+
+training:
+  batch_size: 16
+  epochs: 15
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  similarity_loss_weight: 1.0
+  coordinate_loss_weight: 1.0
+  gradient_clip_norm: 5.0
+
+replay:
+  enabled: true
+  capacity: 2000
+  replay_ratio: 0.25
+
+evaluation:
+  thresholds:
+    - 5
+    - 4
+    - 2
+    - 1

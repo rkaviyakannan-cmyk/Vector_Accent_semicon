@@ -1,0 +1,11 @@
+{
+  "backbone": "mobilenet_v3_small",
+  "in_channels": 1,
+  "input_size": 128,
+  "use_cbam": true,
+  "use_cir": true,
+  "use_dual_correlation": true,
+  "use_xy_feedback": true,
+  "best_val_loss": 0.7105439901351929,
+  "epochs": 15
+}

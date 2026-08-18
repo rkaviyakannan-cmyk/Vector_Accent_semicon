@@ -1,0 +1,33 @@
+{
+  "architecture": "finfet_14nm",
+  "gt_x": 776.3,
+  "gt_y": 950.0,
+  "gt_box": [
+    726.3,
+    900.0,
+    100,
+    100
+  ],
+  "seed": 246994715,
+  "beam_spot_size_nm": 4.5,
+  "collapse_threshold_nm": 8.0,
+  "dose_reference": 1900.0,
+  "dose_search": 200.0,
+  "shear_amplitude_px": 1.2,
+  "drift_jitter_px": 0.6,
+  "detector_noise_sigma_ref": 2.0,
+  "detector_noise_sigma_search": 5.0,
+  "astigmatism_ratio": 0.95,
+  "vignette_strength": 0.0,
+  "gamma": 1.0,
+  "barrel_distortion_k": -0.02,
+  "charging_streak_prob": 1.0,
+  "charging_streak_intensity": 0.5,
+  "speckle_sigma": 0.05,
+  "salt_pepper_prob": 0.0,
+  "mat_size_nm": 2900.0,
+  "strip_width_nm": 340.0,
+  "boundary_bias": 0.4,
+  "linewidth_bias_nm": -1.0,
+  "corner_rounding_px": 2.0
+}

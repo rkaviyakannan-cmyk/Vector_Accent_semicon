@@ -1,0 +1,130 @@
+# ============================================================
+# FINFET LOCALIZATION PROJECT - GITIGNORE
+# ============================================================
+
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ----------------------------
+# Jupyter
+# ----------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ----------------------------
+# VS Code / IDE
+# ----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------------
+# Operating System
+# ----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------
+# Large dataset archives
+# ----------------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.tar.gz
+
+# ----------------------------
+# Dataset cache / temporary data
+# ----------------------------
+.cache/
+.cache/**
+data/cache/
+data/tmp/
+tmp/
+temp/
+
+# ----------------------------
+# Machine Learning experiment logs
+# ----------------------------
+wandb/
+mlruns/
+runs/
+tensorboard/
+lightning_logs/
+
+# ----------------------------
+# Model training temporary files
+# ----------------------------
+*.tmp
+*.temp
+*.bak
+
+# ----------------------------
+# Generated evaluation results
+# ----------------------------
+results/
+
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+logs/
+
+# ----------------------------
+# Secrets / environment variables
+# ----------------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------------
+# Credentials / keys
+# ----------------------------
+*.pem
+*.key
+*.crt
+credentials.json
+secrets.json
+
+# ----------------------------
+# OS / application temporary files
+# ----------------------------
+*.lock
+
+# ============================================================
+# IMPORTANT
+# ============================================================
+# DO NOT ignore:
+#
+# models/checkpoints/best_model.pt
+# models/checkpoints/last_model.pt
+# models/checkpoints/model_config.json
+#
+# unless these files are too large for normal GitHub upload.
+#
+# Dataset files are intentionally NOT globally ignored here.
+# If you want the dataset on GitHub, add it explicitly.
+# ============================================================
